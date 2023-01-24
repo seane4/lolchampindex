@@ -1,0 +1,49 @@
+.filter {
+
+    .wrapper{
+
+        .icons {
+
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            // .iconBody {
+            //     background-color: white;
+            // }
+
+            .icon {
+                display: flex;
+                align-items: center;
+                border: 2px solid lightgray;
+                border-radius: 4px;
+                padding: 8px;
+                background-color: white;
+                cursor: pointer;
+            
+                &:hover {
+                    background-color: rgb(245, 245, 245);
+                    display: flex;
+                    align-items: center;
+                    border: 2px solid lightgray;
+                    border-radius: 4px;
+                    padding: 8px;
+                    cursor: pointer;
+                }
+
+                &.selected {
+                    display: flex;
+                    align-items: center;
+                    border: 2px solid lightgray;
+                    border-radius: 4px;
+                    padding: 8px;
+                    // background-color: #111;
+                    cursor: pointer;
+                    filter: invert(100%) sepia(93%) saturate(26%) hue-rotate(28deg) brightness(106%) contrast(108%);
+
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.nav {
+    padding: 10px;
+    background-color: #111;
+    margin-bottom: 50px;
+
+    .navWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        .title {
+            font-size: 26px;
+            font-style: Inter;
+            font-weight: 900;
+            color: #FFFFFF;
+
+        }
+    
+        button {
+            padding: 10px;
+            width: 150px;
+            background-color: white;
+            color: #111;
+            font-weight: 700;
+            border-radius: 4px;
+        }
+    }
+}
+
+button {
+    background-color: #111;
+    color: white;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100px;
+}

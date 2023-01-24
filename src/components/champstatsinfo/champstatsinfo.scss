@@ -1,0 +1,42 @@
+.champStatsInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    // padding: 10px;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 1px;
+
+            .icon {
+                
+                &.positive {
+                    color: green;
+                }
+
+                &.negative {
+                    color: red;
+                }
+            }
+
+            .label {
+                font-weight: 500;
+                color: rgb(175, 175, 175);
+                font-size: 12px;
+            }
+
+            .figure {
+                font-weight: 600;
+                font-size: 24px;
+            }
+        }
+    }
+}

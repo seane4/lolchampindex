@@ -1,0 +1,267 @@
+.home {
+
+    overflow: hidden;
+    height: 100vh;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    
+    .mainContainer {
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        flex: 6;
+        
+        .champGridPlus {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        
+            .champGridPlusSearch {
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+                flex-direction: column;
+                
+                .searchBarPlus {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 15px;
+
+                    .filter {
+                        flex: 3;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                    }
+
+                    .searchBar {
+                        display: flex;
+                        align-items: center;
+                        border-radius: 4px;
+                        border: 2px solid lightgray;
+                        background-color: white;
+                    
+                        input {
+                            padding: 10px;
+                            width: 700px;
+                            border: none;
+                            outline: none;
+
+                        }
+        
+                        .icon {
+                            padding: 2px;
+                            margin-right: 5px;
+                            
+                            
+                            &.close {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                        
+                }
+
+
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    /* styles for screens smaller than 600px */
+    #root > div > div > div > div > div.champGridPlusSearch > div.searchBarPlus > div.searchPlusBtn > div > input {
+        width: auto;
+    }
+
+    div::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: rgb(211, 211, 211);
+      }
+      
+    div::-webkit-scrollbar {
+        width: 4px;
+        border-radius: 10px;
+        background-color: #F5F5F5;
+      }
+      
+    div::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #111
+      }
+
+    .home {
+        overflow-y: auto;
+    }
+
+    #root > div > div > div > div > div.emptyFocus {
+        height: 250px;
+        width: 100%;
+        display: flex;
+    }
+
+    #root > div > div > div > div > div.emptyFocus > span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home .mainContainer {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .home .mainContainer .champGridPlus .champGridPlusSearch .searchBarPlus .searchBar {
+        justify-content: space-between;
+    }
+
+    .home .mainContainer .champGridPlus .champGridPlusSearch .searchBarPlus {
+        display: block;
+    }
+    
+    #root > div > div > div > div > div.champGridPlusSearch > div.champGrid {
+      grid-template-columns: repeat(2, 1fr);
+      height: 400px;
+      align-content: flex-start;
+    }
+
+    .champContainer {
+      width: 200px;
+    }
+
+    #root > div > div > div > div > div.champFocus {
+      width: auto;
+    }
+
+    #root > div > div > div > div > div.champFocus > div > div.contentBody > div.abilityInfo > div.abilitiesContainer {
+        gap: 12px
+    }
+
+    .home .mainContainer .champGridPlus .champGridPlusSearch {
+        gap:10px
+    }
+
+    .champContainer {
+        min-width: 150px
+    }
+
+    .champContainerselected {
+        min-width: 150px;
+    }
+
+    .home .mainContainer .champGridPlus {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home .mainContainer .champGridPlus .champGridPlusSearch {
+        padding-top: 20px
+    }
+
+    .home .mainContainer {
+        display: block;
+    }
+
+    .home .mainContainer .champGridPlus .champGridPlusSearch .searchBarPlus .filter {
+        display: none;
+    }
+  }
+
+@media only screen and (max-width: 1500px) {
+    
+    .home .mainContainer .champGridPlus .champGridPlusSearch .searchBarPlus .searchBar input {
+        width: 400px;
+    }
+
+    .champGrid {
+      grid-template-columns: repeat(3, 1fr);
+      
+    }
+
+    .champContainer {
+      width: 200px;
+
+    }
+
+    .champContainerselected {
+        width: 200px;
+      }
+
+  }
+
+  @media only screen and (max-width: 1200px) {
+    
+    .home .mainContainer .champGridPlus .champGridPlusSearch .searchBarPlus .searchBar input {
+        width: 150px;
+    }
+
+    .champGrid {
+      grid-template-columns: repeat(2, 1fr);
+      
+    }
+
+    .champContainer {
+      width: 200px;
+
+    }
+
+    .champContainerselected {
+        width: 200px;
+      }
+
+
+  }
+
+  @media only screen and (max-width: 915px) {
+    
+    .home .mainContainer .champGridPlus .champGridPlusSearch .searchBarPlus .searchBar input {
+        width: 100px;
+    }
+
+    .emptyFocus {
+        max-width: 300px;
+    }
+
+    .champFocus {
+        width: 300px;
+    }
+
+    .champFocus .wrapper .contentBody .abilityInfo .abilitiesContainer {
+        gap:3px
+    }
+    
+    .champGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .champContainer {
+        width: auto;
+    }
+
+    .champContainerselected {
+        width: auto;
+      }
+
+      .champContainerselected .wrapper {
+        width: 90%;
+      }
+      
+      .champContainer .wrapper {
+        width: 90%;
+      }
+
+      .champContainerselected .wrapper .tags .tag {
+        width: 30%;
+      }
+
+      .champContainer .wrapper .tags .tag {
+        width: 30%;
+      }
+  }
+
+  

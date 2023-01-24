@@ -1,0 +1,17 @@
+.emptyFocus {
+    width: 400px;
+
+    border-radius: 12px;
+    border: 2px solid lightgray;
+    height: 815px;
+    background-color: rgb(238, 238, 238);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .message {
+        color: rgb(163, 163, 163);
+        font-weight: 500;
+    }
+}

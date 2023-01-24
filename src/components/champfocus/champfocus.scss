@@ -1,0 +1,184 @@
+.champFocus {
+    flex: 4;
+    width: 400px;
+    border-radius: 6px;
+    border: 2px solid lightgray;
+    height: 815px;
+    background-color: white;
+
+    .wrapper {
+
+        width: 100%;
+        height: 100%;
+        
+
+        .cardHeader {
+            width: 100%;
+            height: 60px;
+            z-index: 1;
+
+            .icons {
+                padding: 20px;
+                display: flex;
+                width: auto;
+                justify-content: space-between;
+                align-items: center;
+
+
+                .tagIcon, .roleIcon {
+                    z-index: 2;
+                    filter: invert(100%) sepia(93%) saturate(26%) hue-rotate(28deg) brightness(106%) contrast(108%);
+                }
+            }
+
+            .champHeader {
+
+                translate: 0px -77px;
+                height: 125px;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+                border-top-right-radius: 4px;
+                border-top-left-radius: 4px;
+                filter: brightness(75%);
+                z-index: 1;
+            }
+
+        }
+    
+        .champImgContainer {
+            display: flex;
+            justify-content: center;
+
+            .champImg {
+                z-index: 2;
+                border-radius: 50%;
+                object-fit: cover;
+                box-shadow: 0 3px 10px rgba(99, 99, 99, 0.2);
+                border: 2px solid white;
+            }
+        }
+
+        .champInfoContainer {
+
+            .champStandardInfoContainer {
+                text-align: center;
+                padding: 20px;
+                gap: 4px;
+                display: flex;
+                flex-direction: column;
+
+                .name {
+                    color: #111;
+                    font-size: 26px;
+                    font-family: Inter;
+                    font-weight: 700;
+                }
+
+                .title {
+                    text-transform: capitalize;
+                    font-weight: 500;
+                    color: rgb(77, 77, 77);
+                }
+
+                .tags {
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: 4px;
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    gap: 6px;
+
+                    .tag {
+                        
+                        width: 40%;
+                        padding: 4px 2px 4px 2px;
+                        border-radius: 16px;
+                        color: white;
+                        font-weight: 600;
+                        font-size: 12px;
+
+                        &.fighter {
+                            background-color: #F2994A;
+                        }
+        
+                        &.mage {
+                            background-color: #9B51E0;
+                        }
+        
+                        &.marksman {
+                            background-color: #2D9CDB;
+                        }
+        
+                        &.support {
+                            background-color: #F2C94C;
+                        }
+        
+                        &.assassin {
+                            background-color: #EB5757;
+                        }
+                    
+                        &.tank {
+                            background-color: #27AE60;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contentBody {
+            padding: 20px;
+        
+            .subtitle {
+                font-weight: 600;
+            }
+
+            .abilityInfo {
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                
+
+                .abilitiesContainer {
+
+                    padding-top: 6px;
+                    align-items: center;
+                    display: flex;
+                    gap: 20px;
+
+                    .Ability {
+                        cursor: pointer;
+                        filter: brightness(40%);
+                        background-color: #111;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 4px;
+                    }
+
+                    .Active {
+                        cursor: pointer;
+                        background-color: #111;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 4px;
+                    }
+                }
+
+                .descriptionContainer {
+
+                    padding-top: 4px;
+                    font-weight: 500;
+
+                    .descriptionBody {
+                        font-style: italic;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
