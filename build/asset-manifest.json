@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lolchampindex/static/css/main.b6ac2542.css",
+    "main.js": "/lolchampindex/static/js/main.53013b43.js",
+    "index.html": "/lolchampindex/index.html",
+    "main.b6ac2542.css.map": "/lolchampindex/static/css/main.b6ac2542.css.map",
+    "main.53013b43.js.map": "/lolchampindex/static/js/main.53013b43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6ac2542.css",
+    "static/js/main.53013b43.js"
+  ]
+}
