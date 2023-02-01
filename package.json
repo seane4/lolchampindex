@@ -1,5 +1,5 @@
 {
-  "homepage": ".",
+  "homepage": "https://seane4.github.io/lolchampindex",
   "name": "champ-index-client",
   "version": "0.1.0",
   "private": true,
@@ -43,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
