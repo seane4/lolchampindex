@@ -40,7 +40,7 @@ const AbilityContainer = ({ version, champ}) => {
     //This gets us our spells data to map over later
     useEffect(() => {
         async function fetchAbilities() {
-            const response = await fetch(`http://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion/${champ}.json`);
+            const response = await fetch(`https://ddragon.leagueoflegends.com/cdn/13.1.1/data/en_US/champion/${champ}.json`);
             const data = await response.json();
             setSpells(data.data[champ].spells);
         }
@@ -103,11 +103,11 @@ const AbilityContainer = ({ version, champ}) => {
         <div className="abilityInfo">
             <div className="abilitiesContainer">
                 <div>
-                    <img onClick={e => handleAbilityFocus(passive, 0)} className={abilityFocus.image.full === passive.image.full ? "Active" : "Ability"} src={`http://ddragon.leagueoflegends.com/cdn/${version}/img/passive/${passive.image.full}`} alt="" />
+                    <img onClick={e => handleAbilityFocus(passive, 0)} className={abilityFocus.image.full === passive.image.full ? "Active" : "Ability"} src={`https://ddragon.leagueoflegends.com/cdn/${version}/img/passive/${passive.image.full}`} alt="" />
                 </div>
                 {spells && spells.map((spell, index) => (
                 <div key={spell.id}>
-                    <img onClick={e => handleAbilityFocus(spell, index + 1)} className={abilityFocus.image.full === spell.image.full ? "Active" : "Ability"} src={`http://ddragon.leagueoflegends.com/cdn/${version}/img/spell/${spell.image.full}`} alt={spell.name} />
+                    <img onClick={e => handleAbilityFocus(spell, index + 1)} className={abilityFocus.image.full === spell.image.full ? "Active" : "Ability"} src={`https://ddragon.leagueoflegends.com/cdn/${version}/img/spell/${spell.image.full}`} alt={spell.name} />
                 </div>
             ))  }
             </div>
