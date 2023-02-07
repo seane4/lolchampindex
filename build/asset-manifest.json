@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/lolchampindex/static/css/main.b6ac2542.css",
-    "main.js": "/lolchampindex/static/js/main.712afc13.js",
+    "main.js": "/lolchampindex/static/js/main.7d59f9fa.js",
     "index.html": "/lolchampindex/index.html",
     "main.b6ac2542.css.map": "/lolchampindex/static/css/main.b6ac2542.css.map",
-    "main.712afc13.js.map": "/lolchampindex/static/js/main.712afc13.js.map"
+    "main.7d59f9fa.js.map": "/lolchampindex/static/js/main.7d59f9fa.js.map"
   },
   "entrypoints": [
     "static/css/main.b6ac2542.css",
-    "static/js/main.712afc13.js"
+    "static/js/main.7d59f9fa.js"
   ]
 }

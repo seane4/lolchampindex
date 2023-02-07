@@ -13,17 +13,17 @@ const ChampStatsInfo = () => {
         <div className="wrapper">
             <div className="item">
                 <TrendingUpIcon className={"icon positive" }/>
-                <span className="label">Win Rate</span>
+                <span className="label">Win Rate*</span>
                 <span className="figure">{randomIntFromInterval(48, 55)}%</span>
             </div>
             <div className="item">
                 <TrendingFlatIcon className="icon"/>
-                <span className="label">Pick Rate</span>
+                <span className="label">Pick Rate*</span>
                 <span className="figure">{randomIntFromInterval(8, 20)}%</span>
             </div>
             <div className="item">
                 <TrendingUpIcon className="icon positive"/>
-                <span className="label">Ban Rate</span>
+                <span className="label">Ban Rate*</span>
                 <span className="figure">{randomIntFromInterval(2, 15)}%</span>
             </div>
         </div>
@@ -32,3 +32,4 @@ const ChampStatsInfo = () => {
 }
 
 export default ChampStatsInfo
+
